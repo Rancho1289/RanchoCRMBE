@@ -58,7 +58,8 @@ app.use(cors({
         'https://api.nexvia2.co.kr',
         'https://admin.nexvia2.co.kr',
         'https://m.nexvia2.co.kr',
-        'https://subtle-sopapillas-cd51dc.netlify.app'
+        'https://subtle-sopapillas-cd51dc.netlify.app',
+        'https://rancho-crm-project-05d4c046d65b.herokuapp.com'
       ];
       if (prodOrigins.includes(origin)) return callback(null, true);
     }
