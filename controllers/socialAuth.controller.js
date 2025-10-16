@@ -100,7 +100,7 @@ exports.googleCallback = async (req, res) => {
             // 기존 사용자 로그인
             const token = jwt.sign(
                 { userId: user._id, email: user.email },
-                process.env.JWT_SECRET,
+                process.env.JWT_SECRET_KEY,
                 { expiresIn: '24h' }
             );
 
@@ -168,7 +168,7 @@ exports.naverCallback = async (req, res) => {
             // 기존 사용자 로그인
             const token = jwt.sign(
                 { userId: user._id, email: user.email },
-                process.env.JWT_SECRET,
+                process.env.JWT_SECRET_KEY,
                 { expiresIn: '24h' }
             );
 
